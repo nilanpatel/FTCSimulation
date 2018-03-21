@@ -14,5 +14,10 @@ public class MainActivity extends Activity {
 
         view = new AndroidContext(this);
         setContentView(view);
+
+        /* Set OpenGL ES 2.0 Context */
+        view.setEGLContextClientVersion(2);
+
+        view.setRenderer(new AndroidRenderer(this));
     }
 }
