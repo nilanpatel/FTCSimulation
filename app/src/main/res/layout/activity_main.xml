@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.malepati.vikas.ftcsimulation.MainActivity">
+    tools:context="com.malepati.vikas.ftcsimulation.platform.android.MainActivity">
 
 </android.support.constraint.ConstraintLayout>

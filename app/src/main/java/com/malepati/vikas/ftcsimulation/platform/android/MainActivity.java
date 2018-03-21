@@ -1,4 +1,4 @@
-package com.malepati.vikas.ftcsimulation;
+package com.malepati.vikas.ftcsimulation.platform.android;
 
 import android.app.Activity;
 import android.opengl.GLSurfaceView;
@@ -6,13 +6,13 @@ import android.os.Bundle;
 
 public class MainActivity extends Activity {
 
-    private GLSurfaceView glView;
+    private GLSurfaceView view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        glView = new FTCGLSurfaceView(this);
-        setContentView(glView);
+        view = new AndroidContext(this);
+        setContentView(view);
     }
 }
