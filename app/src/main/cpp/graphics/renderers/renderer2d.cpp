@@ -19,6 +19,9 @@ void Renderer2D::create() {
 	glClearColor(0.0f, 0.1f, 0.2f, 0.0f);
 
 	glEnable(GL_DEPTH_TEST);
+
+	FIBITMAP *dib = NULL;
+	FREE_IMAGE_FORMAT fif = FIF_UNKNOWN;
 }
 
 void Renderer2D::change(int width, int height) {

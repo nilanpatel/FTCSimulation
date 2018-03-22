@@ -10,12 +10,32 @@ add_library(
                 # Sets the library as a shared library.
                 SHARED
 
+                src/main/cpp/types.h
+
                 # graphics
-                src/main/cpp/graphics/renderer2d.h
-                src/main/cpp/graphics/renderer2d.cpp
+                src/main/cpp/graphics/renderers/renderer2d.h
+                src/main/cpp/graphics/renderers/renderer2d.cpp
+                src/main/cpp/graphics/common.h
+                src/main/cpp/graphics/error.cpp
+
+                # math
+                src/main/cpp/math/mat4.h
+                src/main/cpp/math/mat4.cpp
+                src/main/cpp/math/quaternion.h
+                src/main/cpp/math/quaternion.cpp
+                src/main/cpp/math/vec2.h
+                src/main/cpp/math/vec2.cpp
+                src/main/cpp/math/vec3.h
+                src/main/cpp/math/vec3.cpp
+                src/main/cpp/math/vec4.h
+                src/main/cpp/math/vec4.cpp
+                src/main/cpp/math/mathfunc.h
+
+                # system
+                src/main/cpp/system/console.h
              )
 
- include_directories(src/main/cpp/)
+ include_directories(src/main/cpp/ dependencies/FreeImage/include)
 
  find_library(log-lib log)
 
