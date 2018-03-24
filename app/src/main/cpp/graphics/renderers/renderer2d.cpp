@@ -2,10 +2,7 @@
 #include "renderer2d.h"
 #include <android/log.h>
 
-#define LOG_TAG "FTCSimulation"
-#define LOGI(fmt, args...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, fmt, ##args)
-#define LOGD(fmt, args...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, fmt, ##args)
-#define LOGE(fmt, args...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, fmt, ##args)
+#include <FreeImage.h>
 
 Renderer2D::Renderer2D() {
 
@@ -19,9 +16,6 @@ void Renderer2D::create() {
 	glClearColor(0.0f, 0.1f, 0.2f, 0.0f);
 
 	glEnable(GL_DEPTH_TEST);
-
-	FIBITMAP *dib = NULL;
-	FREE_IMAGE_FORMAT fif = FIF_UNKNOWN;
 }
 
 void Renderer2D::change(int width, int height) {
