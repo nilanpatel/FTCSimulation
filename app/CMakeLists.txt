@@ -13,6 +13,10 @@ add_library(
 
                 src/main/cpp/types.h
 
+                # application
+                src/main/cpp/application/application.h
+                src/main/cpp/application/application.cpp
+
                 # graphics
                 src/main/cpp/graphics/renderers/renderer2d.h
                 src/main/cpp/graphics/renderers/renderer2d.cpp
@@ -30,10 +34,16 @@ add_library(
                 src/main/cpp/math/vec3.cpp
                 src/main/cpp/math/vec4.h
                 src/main/cpp/math/vec4.cpp
-                src/main/cpp/math/mathfunc.h
 
                 # system
                 src/main/cpp/system/console.h
+                src/main/cpp/system/timer.h
+                src/main/cpp/system/loadimage.h
+                src/main/cpp/system/loadimage.cpp
+                src/main/cpp/system/engineiostream.h
+                src/main/cpp/system/engineiostream.cpp
+                src/main/cpp/system/androidassetmanager.h
+                src/main/cpp/system/androidassetmanager.cpp
 
                 # freetype-gl
                 ext/freetype-gl/distance-field.c
